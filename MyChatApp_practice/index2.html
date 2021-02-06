@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+
+</head>
+<body>
+  <h1>Sample Page</h1>
+  <p id="msg">no login...</p>
+  <div id="firebaseui-auth-container"></div>
+  <table>
+    <tr>
+      <th>Email</th>
+      <td><input type="email" id="email"></td>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td><input type="password" id="password"></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>
+        <button id="login">login</button>
+        <button id="logout">Logout</button>
+      </td>
+    </tr>
+    <tr>
+      <td>会員登録</td>
+      <td><button id="touroku">登録</td>
+    </tr>
+  </table>
+
+
+  <table id="post_table">
+    <tr><td>タイトル１</td><td>投稿１</td></tr>
+    <tr><td>タイトル１</td><td>投稿１</td></tr>
+    <tr><td>タイトル１</td><td>投稿１</td></tr>
+    <tr><td>タイトル１</td><td>投稿１</td></tr>
+  </table>
+  <div id="post_details" class="hidden">
+    <iframe src="post_details.html" id="iframe"></iframe>
+    <input type="button" value="閉じる" id="close_iframe">
+  </div>
+  <button id="post_btn">投稿</button>
+  <div id="post" class="hidden">
+    <iframe src="post.html" id="iframe_post" height="500px"></iframe>
+    <input type="button" value="投稿する" id="submit_post">
+    <input type="button" value="閉じる" id="close_post">
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/top.js"></script>
+</body>
+</html>
