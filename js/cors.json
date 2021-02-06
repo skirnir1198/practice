@@ -1,6 +1,6 @@
 [
     {
-        "origin": ["http://"],
+        "origin": ["https://skirnir1198.github.io/practice/"],
         "method": ["GET", "PUT", "POST", "DELETE"],
         "maxAgeSeconds": 3600
     }
